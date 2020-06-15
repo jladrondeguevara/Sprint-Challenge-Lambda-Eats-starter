@@ -1,13 +1,11 @@
 import React from "react";
+import { Switch, Route, Link} from "react-router-dom";
+import Pizza from "./Pizza";
+
 
 const Home = () => {
     return (
-        <div>   
-            <h1>Lamba Eats</h1>
-            <nav>
-                <li>Home</li>
-                <li>Help</li>
-            </nav>
+        <div>  
         </div>
     )
 };
