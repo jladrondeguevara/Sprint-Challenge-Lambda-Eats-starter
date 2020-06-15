@@ -5,7 +5,8 @@ import Pizza from "./Pizza";
 
 const Home = () => {
     return (
-        <div>  
+        <div>
+            <h1>Welcome to Lambda Eats!</h1>  
         </div>
     )
 };

@@ -5,11 +5,6 @@ const Pizza = () => {
     const [sauce, sauceSelected] = useState('original');
     const [toppingCount, setToppingCount] = useState('0');
 
-    // const radioChange = (e) => {
-    //     sauceSelected: e.target.value;
-    // };
-
-
     return (
         <div className="pizza-form">
             <form >
@@ -41,7 +36,7 @@ const Pizza = () => {
                     Spinach Alfredo
                 </label>
                 <h2>Add Toppings</h2>
-                <p>Choose up to 4 Toppings</p>
+                <p>Choose up to 10 Toppings</p>
                 <div className = "toppings1">
                     <label htmlFor="toppings1">
                         <input id="pepperoni" type="checkbox"name="pepperoni"/>
@@ -87,6 +82,7 @@ const Pizza = () => {
                 <label htmlFor="specialinstrcutions">
                     <input id="instructions" type ="text"/>
                 </label>
+                <button>Add to order</button>
             </form>
         </div>
     );
