@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "./Pizza.css";
 
 const Pizza = () => {
     const [sauce, sauceSelected] = useState('original');
@@ -43,40 +44,49 @@ const Pizza = () => {
                 <p>Choose up to 4 Toppings</p>
                 <div className = "toppings1">
                     <label htmlFor="toppings1">
-                        <input id="pepperoni" type="checkbox"name="original"/>
+                        <input id="pepperoni" type="checkbox"name="pepperoni"/>
                         Pepperoni
-                        <input id="sausage" type="checkbox"name="original"/>
+                        <input id="sausage" type="checkbox"name="sausage"/>
                         Sausage
-                        <input id="canadianbacon" type="checkbox"name="original"/>
+                        <input id="canadianbacon" type="checkbox"name="canadianbacon"/>
                         Canadian Bacon
-                        <input id="italiansausage" type="checkbox"name="original"/>
+                        <input id="italiansausage" type="checkbox"name="italiansausage"/>
                         Spicy Italian Sausage
-                        <input id="grilledchicken" type="checkbox"name="original"/>
+                        <input id="grilledchicken" type="checkbox"name="grilledchicken"/>
                         Grilled Chicken
-                        <input id="pizza-sauce-original" type="checkbox"name="original"/>
+                        <input id="onions" type="checkbox"name="onions"/>
                         Onions
-                        <input id="greenpepper" type="checkbox"name="original"/>
+                        <input id="greenpepper" type="checkbox"name="greenpepper"/>
                         Green Pepper
                     </label>
                 </div>
                 <div className = "toppings2">
                     <label htmlFor="toppings2">
-                        <input id="pizza-sauce-original" type="checkbox"name="original"/>
+                        <input id="dicedtomatoes" type="checkbox"name="dicedtomatoes"/>
                         Diced Tomatoes
-                        <input id="pizza-sauce-original" type="checkbox"name="original"/>
+                        <input id="blackolives" type="checkbox"name="blackolives"/>
                         Black Olives
-                        <input id="pizza-sauce-original" type="checkbox"name="original"/>
+                        <input id="roastedgarlic" type="checkbox"name="roastedgarlic"/>
                         Roasted Garlic
-                        <input id="pizza-sauce-original" type="checkbox"name="original"/>
+                        <input id="artichoque" type="checkbox"name="artichoque"/>
                         Artichoque Hearts
-                        <input id="pizza-sauce-original" type="checkbox"name="original"/>
+                        <input id="threecheese" type="checkbox"name="threecheese"/>
                         Three Cheese
-                        <input id="pizza-sauce-original" type="checkbox"name="original"/>
+                        <input id="pineapple" type="checkbox"name="pineapple"/>
                         Pineapple
-                        <input id="pizza-sauce-original" type="checkbox"name="original"/>
+                        <input id="extracheese" type="checkbox"name="extracheese"/>
                         Extra Cheese
                     </label>
                 </div>
+                <h2>Choice of substitute</h2>
+                <label htmlFor="glutenSwitch">
+                    <input type="checkbox"/>
+                    Gluten Free (+$1.00)
+                </label>
+                <h2>Special Instructions</h2>
+                <label htmlFor="specialinstrcutions">
+                    <input id="instructions" type ="text"/>
+                </label>
             </form>
         </div>
     );
